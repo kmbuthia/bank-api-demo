@@ -1,8 +1,8 @@
 ## Credable API demo
 
-Github repo:
+Github repo: https://github.com/kmbuthia/credable-api-demo
 
-Video link:
+Video link: https://drive.google.com/file/d/1FP9DwXDQO_Pd1W-clDZFDsJiGv-m0DNi/view?usp=sharing
 
 #### Pre-requisites
 To run the app on your machine you will need the following installed:
