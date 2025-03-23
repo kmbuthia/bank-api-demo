@@ -1,0 +1,39 @@
+services:
+  cache:
+    image: 'eqalpha/keydb:x86_64_v6.3.4'
+    command: '--port 6379'
+    env_file: ./.env.docker
+    ports:
+      - '${CACHE_PORT}:6379'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - host
+  mock-server:
+    image: mockoon/cli:latest
+    command: ["--data", "/mock_server"]
+    restart: "unless-stopped"
+    volumes:
+      - ./loan-demo-mock-server.json:/mock_server:readonly
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - host
+  backend:
+    build:
+      context: .
+    command: bash -c "yarn run start:dev"
+    depends_on:
+      - cache
+    volumes:
+      - ./src:/app/src
+    env_file: ./.env.docker
+    ports:
+      - '${PORT}:3000'
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    networks:
+      - host
+
+networks:
+  host:

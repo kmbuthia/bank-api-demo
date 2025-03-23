@@ -1,0 +1,564 @@
+{
+	"info": {
+		"_postman_id": "687fd983-2c9f-41e0-8011-78cfa386de65",
+		"name": "Credable API demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2070111"
+	},
+	"item": [
+		{
+			"name": "Create client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "U64ZpJIKFbbye2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "loan-api-demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://free-rodent-amazingly.ngrok-free.app/v1/corebanking/transactions\",\n    \"name\": \"LoanDemoKen\",\n    \"username\": \"loanapi\",\n    \"password\": \"paswd987\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/scoring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"scoring"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"url\": \"https://free-rodent-amazingly.ngrok-free.app/v1/corebanking/transactions\",\n    \"name\": \"LoanDemoKen\",\n    \"username\": \"loanapi\",\n    \"password\": \"paswd987\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/scoring",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"scoring"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-Lx4YBWvwgLK2RgEv52hR5Rl/HIs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 13:31:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 0,\n    \"url\": \"https://free-rodent-amazingly.ngrok-free.app/v1/corebanking/transactions\",\n    \"name\": \"LoanDemoKen\",\n    \"username\": \"loanapi\",\n    \"password\": \"paswd987\",\n    \"token\": \"5101b505-7f54-4391-a966-eaa7b3d250f8\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Subscribe customer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "U64ZpJIKFbbye2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "loan-api-demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerNumber\": 234774784\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/lms/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"lms",
+						"subscribe"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerNumber\": 234774784\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/lms/subscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"lms",
+								"subscribe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-GkzmFlnu+SRiM3UoV7MSBguzsQ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 13:47:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerNumber\": 234774784,\n    \"status\": \"subscribed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Loan request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "U64ZpJIKFbbye2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "loan-api-demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerNumber\": 234774784,\n    \"amount\": 3000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/lms/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"lms",
+						"loan"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerNumber\": 234774784,\n    \"amount\": 1000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/lms/loan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"lms",
+								"loan"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"65-DvHI6z55wPQFUs70alrIzwpi0Ss\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 14:37:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Loan application submitted successfully.\",\n    \"token\": \"d8545fcd-fb68-40a6-8cdb-760d1b7e42b0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Loan status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "U64ZpJIKFbbye2",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "loan-api-demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/v1/lms/loan?token=fa0f5171-1c32-40ba-80d0-16dfe288323b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"lms",
+						"loan"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "fa0f5171-1c32-40ba-80d0-16dfe288323b"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Loan approved",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/lms/loan?token=d8545fcd-fb68-40a6-8cdb-760d1b7e42b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"lms",
+								"loan"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "d8545fcd-fb68-40a6-8cdb-760d1b7e42b0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "121"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"79-qtv8LujLuG+yeV2MHIWTrS/nyR4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 14:39:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"customerNumber\": 234774784,\n        \"amount\": 1000,\n        \"status\": \"approved\",\n        \"token\": \"d8545fcd-fb68-40a6-8cdb-760d1b7e42b0\"\n    }\n}"
+				},
+				{
+					"name": "Loan rejected",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/lms/loan?token=644b88b3-c596-4415-aef4-6467d02e948a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"lms",
+								"loan"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "644b88b3-c596-4415-aef4-6467d02e948a"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b2-GPNHNLe0bHMLqj1Ce9My2eCp/kg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 14:44:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"customerNumber\": 234774784,\n        \"amount\": 100000,\n        \"status\": \"rejected\",\n        \"token\": \"644b88b3-c596-4415-aef4-6467d02e948a\",\n        \"reason\": \"Loan amount exceeds allowed limit of: 30000\"\n    }\n}"
+				},
+				{
+					"name": "Loan pending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/lms/loan?token=221e8e3e-85b6-46f0-8898-ad1e018624ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"lms",
+								"loan"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "221e8e3e-85b6-46f0-8898-ad1e018624ff"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "120"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"78-EPoQZ5hADFxStnzbe07cmoAjmf4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Mar 2025 14:50:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"customerNumber\": 234774784,\n        \"amount\": 3000,\n        \"status\": \"pending\",\n        \"token\": \"221e8e3e-85b6-46f0-8898-ad1e018624ff\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+.git
+.gitignore
+.dockerignore
+
+**/dist
+**/node_modules
+**/npm-debug
+
+.env
+.env.*
+
+**/Dockerfile
+.eslintrc.js
