@@ -52,15 +52,9 @@ AUTH_BASIC_PASSWORD=U64ZpJIKFbbye2
 #### Project description and important notes
 This project consists of 3 modules: scoring, core-banking and lms.
 
-I used a mock API server because I could not get a response from the provided scoring API url.
-![Screenshot of scoring API timeouts](./assets/score-api-timeout.png)
-
-I could not simulate the scoring API making a call to my API that would trigger a call to the core-banking
-module to fetch transactions. However, I have added the core-banking middleware code in place to showcase a
-proof of concept on how it can parse xml data and convert it to json for SOAP related requests.
-
-A client application is meant to interact with the lms module. To simulate the createClient behaviour,
-an additional endpoint in the scoring module was also exposed to achieve this.
+Scoring module handles obtaining a credit score for the user that requests a loan.
+Core banking module is a middleware service that facilitates making requests to a down-stream SOAP-based system.
+LMS module interacts directly with client applications to handle loan related requests from end users.
 
 Features implemented:
 1. Basic authication for all exposed endpoints
@@ -71,7 +65,5 @@ Features implemented:
 5. Core banking module that can convert xml to json
 6. Postman collection to showcase implemented endpoints can be found here: `./assets/Credable-API-demo.postman_collection.json`
 
-N.B. Should the credable scoring API service have worked, exposing my app with `[ngrok](https://ngrok.com/docs/getting-started/)` would have allowed me to
-test the "live" version of the scoring process end to end.
 
 
