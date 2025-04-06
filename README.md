@@ -1,6 +1,6 @@
 ## Credable API demo
 
-Github repo: https://github.com/kmbuthia/credable-api-demo
+Github repo: https://github.com/kmbuthia/bank-api-demo
 
 Video link: https://drive.google.com/file/d/1FP9DwXDQO_Pd1W-clDZFDsJiGv-m0DNi/view?usp=sharing
 
